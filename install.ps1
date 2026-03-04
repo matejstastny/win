@@ -24,6 +24,13 @@ foreach ($pkg in $packages) {
 # Wallpaper Section
 # ----------------------------
 
+$wallpaperUrl = "https://github.com/matejstastny/matejstastny/blob/main/assets/pfp.jpeg?raw=true"
+$wallpaperPath = "$env:USERPROFILE\Pictures\pfp.jpeg"
+
+Write-Host "Downloading profile picture..."
+Invoke-WebRequest -Uri $wallpaperUrl -OutFile $wallpaperPath
+
+
 $wallpaperUrl = "https://github.com/matejstastny/win/blob/main/wallpaper.png?raw=true"
 $wallpaperPath = "$env:USERPROFILE\Pictures\wallpaper.png"
 
