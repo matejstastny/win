@@ -24,8 +24,8 @@ foreach ($pkg in $packages) {
 # Wallpaper Section
 # ----------------------------
 
-$wallpaperUrl = "https://yourdomain.com/wallpaper.jpg"
-$wallpaperPath = "$env:USERPROFILE\Pictures\wallpaper.jpg"
+$wallpaperUrl = "https://github.com/matejstastny/win/blob/main/wallpaper.png?raw=true"
+$wallpaperPath = "$env:USERPROFILE\Pictures\wallpaper.png"
 
 Write-Host "Downloading wallpaper..."
 Invoke-WebRequest -Uri $wallpaperUrl -OutFile $wallpaperPath
